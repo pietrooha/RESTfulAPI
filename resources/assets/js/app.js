@@ -20,6 +20,16 @@ Vue.component(
   require('./components/passport/PersonalAccessTokens')
 );
 
+Vue.component(
+  'passport-clients',
+  require('./components/passport/Clients')
+);
+
+Vue.component(
+  'passport-authorized-clients',
+  require('./components/passport/AuthorizedClients')
+);
+
 const app = new Vue({
     el: '#app'
 });
