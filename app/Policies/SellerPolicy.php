@@ -30,7 +30,7 @@ class SellerPolicy
      */
     public function sale(User $user, Seller $seller)
     {
-        //
+        return $user->id === $seller->id;
     }
 
     /**
@@ -42,7 +42,7 @@ class SellerPolicy
      */
     public function editProduct(User $user, Seller $seller)
     {
-        //
+        return $user->id === $seller->id;
     }
 
     /**
@@ -54,6 +54,6 @@ class SellerPolicy
      */
     public function deleteProduct(User $user, Seller $seller)
     {
-        //
+        return $user->id === $seller->id;
     }
 }
